@@ -30,7 +30,7 @@ class Employee {
         this.salary = salary;
     }
 
-    // Override of the toString method to print employee with details
+    // Override of the toString method to print employee with details!
     public String toString() {
         return "Employee name= " + this.name + ", age= " + this.age + ", salary= " + this.salary;
     }

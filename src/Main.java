@@ -19,7 +19,7 @@ public class Main {
         employees.add(new Employee("Dani", 29, 1600));
         employees.add(new Intern("Nico", 23, 1500));
 
-        // Printing details of all employees
+        // Printing details of all employees!
         for (Employee employee : employees) {
             System.out.println(employee);
         }

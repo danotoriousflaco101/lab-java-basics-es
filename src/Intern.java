@@ -1,17 +1,18 @@
 class Intern extends Employee {
-    private static final double MAX_SALARY = (double)20000.0F;
+    private static final int MAX_SALARY = 20000; // Maximum salary for an intern
 
-    public Intern(String name, int age, double salary) {
+    // Constructor to initialize a new intern
+    public Intern(String name, int age, int salary) {
         super(name, age, salary);
-        this.setSalary(salary);
+        this.setSalary(salary); // Set the salary using the setter
     }
 
-    public void setSalary(double salary) {
-        if (salary > (double)20000.0F) {
-            super.setSalary((double)20000.0F);
+    // Setter for the salary, with a check for the maximum salary
+    public void setSalary(int salary) {
+        if (salary > MAX_SALARY) {
+            super.setSalary(MAX_SALARY); // Set to maximum salary if it exceeds the limit
         } else {
-            super.setSalary(salary);
+            super.setSalary(salary); // If else will set the normal salary
         }
-
     }
 }

@@ -12,7 +12,7 @@ class Intern extends Employee {
         if (salary > MAX_SALARY) {
             super.setSalary(MAX_SALARY); // Set to maximum salary if it exceeds the limit
         } else {
-            super.setSalary(salary); // If else will set the normal salary
+            super.setSalary(salary); // If not, it will set the normal salary
         }
     }
 }
